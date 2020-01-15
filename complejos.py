@@ -28,6 +28,14 @@ def dividir(num1,num2):
     d = nume2/deno
     tot = [c,d]
     return tot
+def conjugado(num):
+    d = num[1]
+    d = -d
+    return [num[0],d]
+
+def modulo(num):
+    c = num[0]^2 + num[1]^2
+    return c^0.5
 def mostrar(n):
     """a es la parte real y b es la parte imaginaria"""
     a = n[0]
@@ -46,8 +54,13 @@ def main():
     n1 = [2,3]
     n2 = [1,0]
     n3 = suma(n1,n2)
+    n4 = multiplicar(n1,n2)
+    n5 = dividir(n1,n2)
+    n6 = conjugado(n1)
     mostrar(n1)
     mostrar(n2)
     mostrar(n3)
-
+    mostrar(n4)
+    mostrar(n5)
+    mostrar(n6)
 main()
