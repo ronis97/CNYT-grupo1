@@ -23,7 +23,11 @@ def multiplicar(num1,num2):
 def dividir(num1,num2):
     nume1 = num1[0] * num2[0] + num1[1]* num2[1]
     deno = num1[0]^2 + num2[1]^2
-    num2 = num1[1]*num2[0] - num1[0]*num2[1]
+    nume2 = num1[1]*num2[0] - num1[0]*num2[1]
+    c = nume1/deno
+    d = nume2/deno
+    tot = [c,d]
+    return tot
 def mostrar(n):
     """a es la parte real y b es la parte imaginaria"""
     a = n[0]
