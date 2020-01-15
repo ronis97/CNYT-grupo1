@@ -33,14 +33,14 @@ def mostrar(n):
     a = n[0]
     b = n[1]
     
-    if b >= 0:
+    if b > 0:
         
         print(a,'+',str(b)+'i')
     elif b == 0:
         print(a)
         
-    else:
-        print(a,'-',str(b)+'i')
+    elif b < 0:
+        print(a,'-',str(abs(b))+'i')
 
 def main():
     n1 = [2,3]
