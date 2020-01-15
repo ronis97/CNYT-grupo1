@@ -15,6 +15,8 @@ def resta(num1,num2):
     return tot
 
 def multiplicar(num1,num2):
+    if num1[0] == 0 and num2[0] == 0:
+        return "No se puede resolver"
     c = num1[0]*num2[0] - num1[1]*num2[1]
     d = num1[0]*num2[1] + num1[1]*num2[0]
     tot = [c,d]
