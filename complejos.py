@@ -3,19 +3,23 @@ import math
 from sys import stdin
 
 def suma(num1,num2):
-    #num1 y num2 deben ser arreglos
+    """Suma de dos numeros complejos, num1 y num2 deben ser arreglos"""
     c = num1[0] + num2[0]
     d = num1[1] + num2[1]
     tot = [c,d]
     return tot
 
 def resta(num1,num2):
+    """Resta de dos numeros complejos, num1 y num2 deben ser arreglos"""
+    if num1[0] == 0 and num2[0] == 0:
+        return "No se puede resolver"
     c = num1[0] - num2[0]
     d = num1[1] - num2[1]
     tot = [c,d]
     return tot
 
 def multiplicar(num1,num2):
+    """Multiplicacion de dos numeros complejos, num1 y num2 deben ser arreglos"""
     if num1[0] == 0 and num2[0] == 0:
         return "No se puede resolver"
     c = num1[0]*num2[0] - num1[1]*num2[1]
@@ -24,29 +28,36 @@ def multiplicar(num1,num2):
     return tot
 
 def dividir(num1,num2):
+    """Division de dos numeros complejos, num1 y num2 deben ser arreglos"""
     nume1 = num1[0] * num2[0] + num1[1]* num2[1]
     deno = num1[0]^2 + num2[1]^2
     nume2 = num1[1]*num2[0] - num1[0]*num2[1]
+    if deno == 0:
+        print("Division por cero es invalida")
     c = nume1/deno
     d = nume2/deno
     tot = [c,d]
     return tot
 
 def conjugado(num):
+    """conjugado de un numero complejo, num debe ser un arreglo"""
     d = num[1]
     d = -d
     return [num[0],d]
 
 def modulo(num):
+    """Modulo de un numero complejo, num debe ser un arreglo """
     c = num[0]**2 + num[1]**2
     return float(c) ** 0.5
 
 def fase_complejo(num):
+    """Fase, argumento o amplitud de un numero complejo, num debe ser un arreglo"""
     x = num[0]
     y = num[1]
     return math.atan2(y,x)
 
 def pasar_a_polar(num):
+    """Convertir un numero complejo a forma polar """
     r = modulo(num)
     theta = fase_complejo(num)
     c = r * math.cos(theta)
@@ -55,6 +66,7 @@ def pasar_a_polar(num):
     return pol
 
 def pasar_a_cartesiana(num):
+    """Convertir un numero complejo de forma polar a cartesiana """
     r = num[0]
     theta = num[1]
     x = r * math.cos(theta)
@@ -62,7 +74,8 @@ def pasar_a_cartesiana(num):
     return [x,y]
 
 def mostrar(n):
-    """a es la parte real y b es la parte imaginaria"""
+    """a es la parte real y b es la parte imaginaria
+    muestra el numero complejo en forma a + bi"""
     a = n[0]
     b = n[1]
     if b > 0:       
