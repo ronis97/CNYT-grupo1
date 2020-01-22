@@ -1,7 +1,7 @@
 """
 Libreria de complejos, en la cual por medio de arreglos, realizamos las operaciones basicas sumar, restar, multiplicar y dividir.
 Luego procedemos a conversiones cartesiana y polar. Se incluye tambien funciones que permitiran encontrar el modulo, el conjugado
-y la fase de un numero complejo.
+y la fase de un numero complejo. Por ultimo, se incluye una funcion que muestra en pantalla la notacion a + bi de un numero complejo.
 """
 import math
 from sys import stdin
