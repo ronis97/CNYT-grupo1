@@ -34,7 +34,7 @@ def multiplicar(num1,num2):
 def dividir(num1,num2):
     """Division de dos numeros complejos, num1 y num2 deben ser arreglos"""
     nume1 = num1[0] * num2[0] + num1[1]* num2[1]
-    deno = num2[0]**2 + num2[1]**2
+    deno = num2[1]**2 + num2[1]**2
     nume2 = num1[1]*num2[0] - num1[0]*num2[1]
     if deno == 0:
         print("Division por cero es invalida")
@@ -52,22 +52,19 @@ def conjugado(num):
 def modulo(num):
     """Modulo de un numero complejo, num debe ser un arreglo """
     x,y = separar(num)
-    c = x**2 + y **2    
-    return round(c**0.5,4)
+    c = x**2 + y **2     
+    return c**0.5
 
 def fase_complejo(num):
     """Fase, argumento o amplitud de un numero complejo, num debe ser un arreglo"""
     x = num[0]
     y = num[1]
     return math.atan2(y,x)
-
 def pasar_a_polar(num):
     """Convertir un numero complejo a forma polar """
     r = modulo(num)
     theta = fase_complejo(num)
-    c = r * math.cos(theta)
-    d = r * math.sin(theta)
-    pol = [c,d]
+    pol = [r,theta]
     return pol
 
 def pasar_a_cartesiana(num):
@@ -78,10 +75,8 @@ def pasar_a_cartesiana(num):
     y = r * math.sin(theta)
     return [x,y]
 
-def pasar_a_exponencial(num):
-    
-
 def separar(num):
+    """Retorna parte real e imaginaria"""
     x = num[0]
     y = num[1]
     return x,y
@@ -106,7 +101,7 @@ def main():
     n5 = dividir([-7,3],[1,1])
     n6 = conjugado(n1)
     n7 = [1,1]
-    pr = modulo(n7)
+    pr = fase_complejo(n7)
     n8 = pasar_a_polar(n7)
     #print(n5)
     #mostrar(n1)
@@ -115,7 +110,7 @@ def main():
     #mostrar(n4)
     #mostrar(n5)
     #mostrar(n6)
-    print(pr)
-    #mostrar(n8)
+    #print(pr)
+    #print(n8)
    
 #main()
