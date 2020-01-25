@@ -1,5 +1,34 @@
-# CNYT-grupo1
-Ciencias Naturales y Tecnologia grupo 1
+# Curso CNYT Ciencias naturales y tecnologia
+## Proyecto: Complejos
+## Proyecto#: 1
+## Programador: 
+## Edgar Ronaldo Henao Villarreal
 
-## CNYT material
-Librerias creadas para su uso respectivo en la asignatura Ciencias naturales y tecnologia.
+### Contenido
+__Esenciales__
+- Sumar
+- Restar
+- Multiplicar
+- Dividir
+- Conjugado
+- Modulo
+- Fase de un complejo
+- Pasar a polar
+- Pasar a cartesianas
+
+__Opcionales__
+- Separar
+- Mostrar
+
+#### Pruebas
+Los calculos se hicieron con el software 
+``` 
+maple17 
+```
+La imagen ```PruebaComplejos.png```da constancia de los resultados, estos a su vez
+se realizan en ```test_case.py``` donde se evidencia un correcto funcionamiento de 
+la libreria.
+
+#### ¿Como usar la libreria?
+Con la instruccion en ```python 3.*```:
+```import complejos```.
