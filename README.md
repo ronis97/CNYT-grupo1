@@ -25,7 +25,8 @@ Los calculos se hicieron con el software
 ``` 
 maple17 
 ```
-La imagen ```PruebaComplejos.png```da constancia de los resultados, estos a su vez
+La imagen <img src="imagenes/PruebaComplejos.png" style="float: center">
+da constancia de los resultados, estos a su vez
 se realizan en ```test_case.py``` donde se evidencia un correcto funcionamiento de 
 la libreria.
 
@@ -33,4 +34,4 @@ la libreria.
 Con la instruccion en ```python 3.*```:
 ```import complejos```.
 
-__Nota:__ La documentacion de la libreria se encuentra en formato HTML sin compilar, es decir codigo base. Para visualizarla solo es necesario descargar el archivo y abrirlo en cualquier navegador.
+__Nota:__ La documentacion de la libreria se encuentra en formato HTML sin compilar, es decir codigo base. Para visualizarla [haga click aqui]{http://htmlpreview.github.io/?https://github.com/ronis97/CNYT-grupo1/blob/master/HTML/complejos.html}.
