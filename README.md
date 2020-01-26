@@ -32,3 +32,4 @@ la libreria.
 #### ¿Como usar la libreria?
 Con la instruccion en ```python 3.*```:
 ```import complejos```.
+__Nota:__ La documentacion de la libreria se encuentra en formato HTML sin compilar, es decir codigo base. Para visualizarla solo es necesario descargar el archivo y abrirlo en cualquier navegador.
