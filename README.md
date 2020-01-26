@@ -34,4 +34,4 @@ la libreria.
 Con la instruccion en ```python 3.*```:
 ```import complejos```.
 
-__Nota:__ La documentacion de la libreria se encuentra en formato HTML sin compilar, es decir codigo base. Para visualizarla [haga click aqui](http://htmlpreview.github.io/?https://github.com/ronis97/CNYT-grupo1/tree/master/HTML/complejos.html).
+__Nota:__ La documentacion de la libreria se encuentra en formato HTML sin compilar, es decir codigo base. Para visualizarla [haga click aqui](http://htmlpreview.github.io/?https://github.com/ronis97/CNYT-grupo1/blob/master/HTML/complejos.html).
