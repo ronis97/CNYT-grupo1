@@ -43,6 +43,17 @@ def dividir(num1,num2):
     tot = [c,d]
     return tot
 
+def inversoaditivo(num):
+    """Retorna el inverso aditivo de un numero complejo"""
+    x = -1 * num[0]
+    y = -1 * num[1]
+    return [x,y]
+
+def escalarpornum(esc,num):
+    x = esc * num[0]
+    y = esc * num[1]
+    return [x,y]
+
 def conjugado(num):
     """conjugado de un numero complejo, num debe ser un arreglo"""
     d = num[1]
