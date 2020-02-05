@@ -15,8 +15,8 @@ def suma(num1,num2):
 
 def resta(num1,num2):
     """Resta de dos numeros complejos, num1 y num2 deben ser arreglos"""
-    if num1[0] == 0 and num2[0] == 0:
-        return "No se puede resolver"
+##    if num1[0] == 0 and num2[0] == 0:
+##        return "No se puede resolver"
     c = num1[0] - num2[0]
     d = num1[1] - num2[1]
     tot = [c,d]
@@ -24,8 +24,8 @@ def resta(num1,num2):
 
 def multiplicar(num1,num2):
     """Multiplicacion de dos numeros complejos, num1 y num2 deben ser arreglos"""
-    if num1[0] == 0 and num2[0] == 0:
-        return "No se puede resolver"
+##    if num1[0] == 0 and num2[0] == 0:
+##        return "No se puede resolver"
     c = num1[0]*num2[0] - num1[1]*num2[1]
     d = num1[0]*num2[1] + num1[1]*num2[0]
     tot = [c,d]
@@ -50,9 +50,9 @@ def inversoaditivo(num):
     return [x,y]
 
 def escalarpornum(esc,num):
-    x = esc * num[0]
-    y = esc * num[1]
-    return [x,y]
+    
+    res = multiplicar(esc,num)
+    return res
 
 def conjugado(num):
     """conjugado de un numero complejo, num debe ser un arreglo"""
